@@ -131,7 +131,7 @@ def draw_graph(X, Y, alloy_title, energy_option1, energy_title, length_of_candid
 ######################################
 ###Template Start
 st.set_page_config(
-    page_title="Li_v1.0",  # 탭 제목
+    page_title="LiDB-v1.0",  # 탭 제목
     page_icon="🌟",  # 파비콘 (이모지 사용 가능)
     # layout="wide",  # 레이아웃: "centered" 또는 "wide"
     initial_sidebar_state="expanded"  # 사이드바 초기 상태
