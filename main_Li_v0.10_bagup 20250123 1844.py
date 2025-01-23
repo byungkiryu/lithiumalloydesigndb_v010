@@ -14,34 +14,12 @@ from matplotlib import pyplot as plt
 from PIL import Image
 ### bokeh version should be 2.4.3
 
-
-
-
-######################################
-###Template Start
-st.set_page_config(
-    page_title="LiDB-v1.0",  # 탭 제목
-    page_icon="🌟",  # 파비콘 (이모지 사용 가능)
-    # layout="wide",  # 레이아웃: "centered" 또는 "wide"
-    initial_sidebar_state="expanded"  # 사이드바 초기 상태
-)
-
-######################################
-### DB descriptoin
-# st.title('Alloy Design DB - v-Li-0.1.1')
-st.title('Li Alloy Design DB (v0.10)')
-st.markdown(': A database of calculated solid solution, segregation, and binding characteristics of additive elements in lithium alloys for the design of high-strength, long-life anode materials in Li-S batteries.')
-st.markdown(': Data version: Li_ver1.0 from KIMS ' + '-- DB structure: v0.33 from BR')
-# st.markdown('-- **:red[Lite vs Super mode]**')
-
 path_data = "./data/"
 path_figs = "./figs/"
 
 # datafile_prefix = "Cu_and_Al_data_20230404_merged"
 datafile_prefix = "Li_data_ver1p0_20250120"
 sheet_name = 'Li_ver1.0'
-
-
 
 
 def gradientbars(bars):
@@ -150,6 +128,21 @@ def draw_graph(X, Y, alloy_title, energy_option1, energy_title, length_of_candid
 
 
 
+######################################
+###Template Start
+st.set_page_config(
+    page_title="LiDB-v1.0",  # 탭 제목
+    page_icon="🌟",  # 파비콘 (이모지 사용 가능)
+    # layout="wide",  # 레이아웃: "centered" 또는 "wide"
+    initial_sidebar_state="expanded"  # 사이드바 초기 상태
+)
+
+
+# st.title('Alloy Design DB - v-Li-0.1.1')
+st.title('Lithium Alloy Design DB (v0.10)')
+# st.markdown('-- This is demo for lithium alloy design')
+st.markdown('-- Data version: Li_ver1.0 from KIMS ' + '-- DB structure: v0.33 from BR')
+# st.markdown('-- **:red[Lite vs Super mode]**')
     
     
 tab1, tab2, tab3, tab4, tab5 = st.tabs(["Database", "Introduction", "Achievement", "World-wide", "Acknowledgement"])
